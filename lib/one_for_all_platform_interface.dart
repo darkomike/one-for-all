@@ -1,3 +1,5 @@
+import 'package:one_for_all/battery/model/battery_info.dart';
+import 'package:one_for_all/device/model/device_info.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'one_for_all_method_channel.dart';
@@ -23,15 +25,13 @@ abstract class OneForAllPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<DeviceInfo> getDeviceInfo() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  Future<int?> getBatteryLevel() {
+  Future<BatteryInfo> getBatteryInfo() {
     throw UnimplementedError('getBatteryInfo() has not been implemented.');
   }
 
-  Future<bool?> isBatteryCharging() {
-    throw UnimplementedError('isBatteryCharging() has not been implemented.');
-  }
+  
 }

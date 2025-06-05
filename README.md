@@ -1,15 +1,9 @@
 # one_for_all
 
-A new Flutter plugin project.
+A flutter plugin to access the essential features of the device, such as battery, network, and storage. It is currently in development and will be updated with more features in the future.
 
-## Getting Started
+> **Note:** This plugin currently supports **Android** only. Support for other platforms will be added in future updates.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+See [USAGE.md](USAGE.md) for detailed instructions on how to use the Device and Battery APIs.

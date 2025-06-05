@@ -1,5 +1,5 @@
 name: one_for_all
-description: "A new Flutter plugin project."
+description: "A flutter plugin to access the essential features of the device, such as battery, network, and storage. It is currently in development and will be updated with more features in the future."
 version: 0.0.1
 homepage:
 
