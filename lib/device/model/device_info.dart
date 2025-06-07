@@ -1,13 +1,14 @@
 class DeviceInfo {
-  //  "manufacturer" to Build.MANUFACTURER,
-  //           "model" to Build.MODEL,
-  //           "brand" to Build.BRAND,
-  //           "device" to Build.DEVICE,
-  //           "version_sdk" to Build.VERSION.SDK_INT.toString(),
-  //           "version_release" to Build.VERSION.RELEASE,
-  //           "android_id" to Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID),
-  //           "app_version" to packageInfo.versionName,
-  //           "package_name" to context.packageName
+  
+//   {
+//   "deviceModel": "iPhone",
+//   "manufacturer": "Apple",
+//   "osVersion": "17.4.1",
+//   "sdkVersion": 17,
+//   "identifier": "A1B2-C3D4-E5F6-G7H8",
+//   "appVersion": "1.0.0",
+//   "packageName": "com.example.myapp"
+// }
 
   final String manufacturer;
   final String model;
@@ -55,7 +56,7 @@ class DeviceInfo {
     );
   }
 
-  DeviceInfo.fromJson(Map<String, dynamic> json)
+  DeviceInfo.fromJsonAndroid(Map<String, dynamic> json)
       : manufacturer = json['manufacturer'] ?? 'Unknown',
         model = json['model'] ?? 'Unknown',
         brand = json['brand'] ?? 'Unknown',
@@ -65,6 +66,20 @@ class DeviceInfo {
         androidId = json['android_id'] ?? 'Unknown',
         appVersion = json['app_version'] ?? 'Unknown',
         packageName = json['package_name'] ?? 'Unknown';
+
+  DeviceInfo.fromJsonIOS(Map<String, dynamic> json)
+      : manufacturer = json['manufacturer'] ?? 'Unknown',
+        model = json['deviceModel'] ?? 'Unknown',
+        brand = json['deviceModel'] ?? 'Unknown',
+        device = json['deviceModel'] ?? 'Unknown',
+        versionSdk = json['version_sdk']?.toString() ?? 'Unknown',
+        versionRelease = json['osVersion'] ?? 'Unknown',
+        androidId = json['identifier'] ?? 'Unknown',
+        appVersion = json['app_version'] ?? 'Unknown',
+        packageName = json['package_name'] ?? 'Unknown';
+
+
+
 
   Map<String, dynamic> toJson() {
     return {

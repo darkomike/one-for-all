@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:one_for_all/battery/battery.dart';
-import 'package:one_for_all/battery/model/battery_info.dart';
 import 'package:one_for_all/device/device.dart';
 import 'package:one_for_all/device/model/device_info.dart';
+import 'package:one_for_all_example/navigation/app_navigation.dart';
 import 'package:one_for_all_example/utils/app_utils.dart';
 
 class DeviceScreen extends StatefulWidget {
@@ -33,7 +32,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
       lg('Failed to get battery info.');
     }
 
-    if (!mounted) return ;
+    if (!mounted) return;
 
     setState(() {
       _deviceInfo = deviceInfo;
@@ -44,22 +43,53 @@ class _DeviceScreenState extends State<DeviceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              AppNavigation.goToHomeScreen();
+            },
+            icon: const Icon(Icons.arrow_back_ios)),
         title: const Text('Device Info'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Device manufacturer : ${_deviceInfo.manufacturer}\n'),
-            Text('Device model : ${_deviceInfo.model}\n'),
-            Text('Device brand : ${_deviceInfo.brand}\n'),
-            Text('Device device : ${_deviceInfo.device}\n'),
-            Text('Device version sdk : ${_deviceInfo.versionSdk}\n'),
-            Text('Device version release : ${_deviceInfo.versionRelease}\n'),
-            Text('Device android id : ${_deviceInfo.androidId}\n'),
-            Text('Device app version : ${_deviceInfo.appVersion}\n'),
-            Text('Device package name : ${_deviceInfo.packageName}\n'),
-
+            Text(
+              'Device manufacturer : ${_deviceInfo.manufacturer}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device model : ${_deviceInfo.model}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device brand : ${_deviceInfo.brand}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device device : ${_deviceInfo.device}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device version sdk : ${_deviceInfo.versionSdk}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device version release : ${_deviceInfo.versionRelease}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device android id : ${_deviceInfo.androidId}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device app version : ${_deviceInfo.appVersion}\n',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Device package name : ${_deviceInfo.packageName}\n',
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ),

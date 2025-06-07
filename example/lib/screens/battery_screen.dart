@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:one_for_all/battery/battery.dart';
 import 'package:one_for_all/battery/model/battery_info.dart';
-import 'package:one_for_all/device/device.dart';
+import 'package:one_for_all_example/navigation/app_navigation.dart';
 import 'package:one_for_all_example/utils/app_utils.dart';
 
 class BatteryScreen extends StatefulWidget {
@@ -32,7 +32,7 @@ class _BatteryScreenState extends State<BatteryScreen> {
       lg('Failed to get battery info.');
     }
 
-    if (!mounted) return ;
+    if (!mounted) return;
 
     setState(() {
       _batteryInfo = batteryInfo;
@@ -43,6 +43,11 @@ class _BatteryScreenState extends State<BatteryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              AppNavigation.goToHomeScreen();
+            },
+            icon: const Icon(Icons.arrow_back_ios)),
         title: const Text('Battery Info'),
       ),
       body: Center(
@@ -53,11 +58,9 @@ class _BatteryScreenState extends State<BatteryScreen> {
             Text("Battery Charging: ${_batteryInfo.chargingStatus}\n"),
             Text('Battery Health: ${_batteryInfo.health}\n'),
             Text('Battery Technology: ${_batteryInfo.technology}\n'),
-            Text('Battery Voltage: ${_batteryInfo.voltage}\n'), 
-            
+            Text('Battery Voltage: ${_batteryInfo.voltage}\n'),
             Text('Battery Temperature: ${_batteryInfo.temperature}\n'),
             Text('Battery Capacity: ${_batteryInfo.chargingSource}\n'),
-
           ],
         ),
       ),

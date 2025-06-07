@@ -2,7 +2,7 @@
 
 A flutter plugin to access the essential features of the device, such as battery, network, and storage. It is currently in development and will be updated with more features in the future.
 
-> **Note:** This plugin currently supports **Android** only. Support for other platforms will be added in future updates.
+> **Note:** This plugin currently supports **Android** and **iOS** platforms. Support for other platforms will be added in future updates.
 
 ## Usage
 
