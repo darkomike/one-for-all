@@ -1,6 +1,6 @@
 # Device and Battery API Usage
 
-This document explains how to use the Device and Battery APIs provided by the `one_for_all` Flutter plugin.
+This document explains how to use the Device and Battery APIs provided by the `one_for_all_platform` Flutter plugin.
 
 ## Getting Started
 
@@ -8,15 +8,15 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  one_for_all:
-    path: ../one_for_all
+  one_for_all_platform: 0.0.1
+    
 ```
 
 Import the required classes in your Dart file:
 
 ```dart
-import 'package:one_for_all/device/device.dart';
-import 'package:one_for_all/battery/battery.dart';
+import 'package:one_for_all_platform/device/device.dart';
+import 'package:one_for_all_platform/battery/battery.dart';
 ```
 
 ---
@@ -64,8 +64,8 @@ print('Technology: \\${batteryInfo.technology}');
 ## Example
 
 ```dart
-import 'package:one_for_all/device/device.dart';
-import 'package:one_for_all/battery/battery.dart';
+import 'package:one_for_all_platform/device/device.dart';
+import 'package:one_for_all_platform/battery/battery.dart';
 
 void main() async {
   final deviceInfo = await Device.instance.getDeviceInfo();

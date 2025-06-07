@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:one_for_all/device/device.dart';
-import 'package:one_for_all/device/model/device_info.dart';
+import 'package:one_for_all_platform/device/device.dart';
+import 'package:one_for_all_platform/device/model/device_info.dart';
 import 'package:one_for_all_example/navigation/app_navigation.dart';
 import 'package:one_for_all_example/utils/app_utils.dart';
 

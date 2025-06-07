@@ -1,6 +1,6 @@
 # Screenshots
 
-This document contains screenshots demonstrating the usage and UI of the `one_for_all` Flutter plugin on supported platforms.
+This document contains screenshots demonstrating the usage and UI of the `one_for_all_platform` Flutter plugin on supported platforms.
 
 ---
 

@@ -154,7 +154,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.15.0"
-  one_for_all:
+  one_for_all_platform:
     dependency: "direct main"
     description:
       path: ".."

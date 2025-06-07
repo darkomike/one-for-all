@@ -2,9 +2,9 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:one_for_all/battery/model/battery_info.dart';
-import 'package:one_for_all/device/model/device_info.dart';
-import 'package:one_for_all/utils/utils.dart';
+import 'package:one_for_all_platform/battery/model/battery_info.dart';
+import 'package:one_for_all_platform/device/model/device_info.dart';
+import 'package:one_for_all_platform/utils/utils.dart';
 import 'one_for_all_platform_interface.dart';
 
 /// An implementation of [OneForAllPlatform] that uses method channels.

@@ -1,7 +1,7 @@
 
 
-import 'package:one_for_all/device/model/device_info.dart';
-import 'package:one_for_all/one_for_all_platform_interface.dart';
+import 'package:one_for_all_platform/device/model/device_info.dart';
+import 'package:one_for_all_platform/one_for_all_platform_interface.dart';
 
 class Device{
   Device._();

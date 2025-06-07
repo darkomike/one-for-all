@@ -1,4 +1,4 @@
-# one_for_all
+# one_for_all_platform
 
 A flutter plugin to access the essential features of the device, such as battery, network, and storage. It is currently in development and will be updated with more features in the future.
 

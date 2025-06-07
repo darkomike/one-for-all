@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:one_for_all/one_for_all_method_channel.dart';
+import 'package:one_for_all_platform/one_for_all_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

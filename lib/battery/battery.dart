@@ -1,5 +1,5 @@
-import 'package:one_for_all/battery/model/battery_info.dart';
-import 'package:one_for_all/one_for_all_platform_interface.dart';
+import 'package:one_for_all_platform/battery/model/battery_info.dart';
+import 'package:one_for_all_platform/one_for_all_platform_interface.dart';
 
 class Battery {
   /// Singleton instance of [Battery]

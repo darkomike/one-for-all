@@ -17,7 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  one_for_all:
+  one_for_all_platform:
     # When depending on this package from a real application you should use:
     #   one_for_all: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
