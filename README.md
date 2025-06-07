@@ -7,3 +7,7 @@ A flutter plugin to access the essential features of the device, such as battery
 ## Usage
 
 See [USAGE.md](USAGE.md) for detailed instructions on how to use the Device and Battery APIs.
+
+## Screenshots
+
+Screenshots demonstrating the plugin in action can be found in the [SCREENSHOTS.md](SCREENSHOTS.md) file. All screenshot images are located in the `screenshots/` directory at the root of this project.
