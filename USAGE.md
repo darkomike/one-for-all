@@ -8,8 +8,11 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  one_for_all_platform: 0.0.1
-    
+  one_for_all_platform:
+    git:
+      url: https://github.com/darkomike/one-for-all.git
+      ref: v0.0.1
+
 ```
 
 Import the required classes in your Dart file:
