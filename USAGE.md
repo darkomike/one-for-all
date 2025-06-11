@@ -11,7 +11,7 @@ dependencies:
   one_for_all_platform:
     git:
       url: https://github.com/darkomike/one-for-all.git
-      ref: v0.0.1
+      ref: v0.0.2
 
 ```
 
