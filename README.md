@@ -4,9 +4,10 @@ A flutter plugin to access the essential features of the device, such as battery
 
 > **Note:** This plugin currently supports **Android** and **iOS** platforms. Support for other platforms will be added in future updates.
 
+
 ## Usage
 
-See [USAGE.md](USAGE.md) for detailed instructions on how to use the Device and Battery APIs.
+See [USAGE.md](USAGE.md) for detailed instructions on how to use the Device, Network and Battery APIs.
 
 ## Screenshots
 

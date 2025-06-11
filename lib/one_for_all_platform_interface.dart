@@ -1,5 +1,7 @@
 import 'package:one_for_all_platform/battery/model/battery_info.dart';
 import 'package:one_for_all_platform/device/model/device_info.dart';
+import 'package:one_for_all_platform/network/model/network_info.dart';
+import 'package:one_for_all_platform/network/network.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'one_for_all_method_channel.dart';
@@ -30,6 +32,10 @@ abstract class OneForAllPlatform extends PlatformInterface {
   }
 
   Future<BatteryInfo> getBatteryInfo() {
+    throw UnimplementedError('getBatteryInfo() has not been implemented.');
+  }
+ 
+  Future<NetworkInfo> getNetworkInfo() {
     throw UnimplementedError('getBatteryInfo() has not been implemented.');
   }
 

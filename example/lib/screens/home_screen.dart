@@ -30,12 +30,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text('Get Battery Info')),
             TextButton(
-
                 onPressed: () {
                   AppNavigation.goToDeviceInfoScreen();
                 },
                 child: const Text('Get Device Info')),
-                
+            TextButton(
+                onPressed: () {
+                  AppNavigation.goToNetworkInfoScreen();
+                },
+                child: const Text('Get Network Info')),
           ],
         ),
       ),

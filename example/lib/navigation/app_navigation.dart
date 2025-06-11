@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:one_for_all_example/screens/battery_screen.dart';
 import 'package:one_for_all_example/screens/device_screen.dart';
 import 'package:one_for_all_example/screens/home_screen.dart';
+import 'package:one_for_all_example/screens/network_screen.dart';
 import 'package:one_for_all_example/screens/splash_screen.dart';
 
 class AppNavigationRoutes {
@@ -13,6 +14,7 @@ class AppNavigationRoutes {
   static const home = "/home";
   static const batteryInfo = "/batteryInfo";
   static const deviceInfo = "/deviceInfo";
+  static const networkInfo = "/networkInfo";
 }
 
 class AppNavigation {
@@ -37,7 +39,9 @@ class AppNavigation {
         return const BatteryScreen();
       case AppNavigationRoutes.deviceInfo:
         return const DeviceScreen();
-
+      case AppNavigationRoutes.networkInfo:
+          return const NetworkScreen();
+        
       default:
         return Text(
           "No route defined for $route",
@@ -89,7 +93,7 @@ class AppNavigation {
     }
     SystemNavigator.pop();
   }
-
+ 
 //Home
   static goToHomeScreen() {
     push(AppNavigationRoutes.home, clearStack: true, replace: true);
@@ -97,11 +101,18 @@ class AppNavigation {
 
   //Battery Info
   static goToBatteryInfoScreen() {
-    push(AppNavigationRoutes.batteryInfo, clearStack: true, replace: false); 
+    push(AppNavigationRoutes.batteryInfo, clearStack: false, replace: false); 
   }
 
   // Device Info
   static goToDeviceInfoScreen() {
-    push(AppNavigationRoutes.deviceInfo, clearStack: true, replace: false);  
+    push(AppNavigationRoutes.deviceInfo, clearStack: false, replace: false);  
+
   }
+
+  // Network Info
+  static goToNetworkInfoScreen() {
+    push(AppNavigationRoutes.networkInfo, clearStack: false, replace: false);  
+  }
+  
 }
